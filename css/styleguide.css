@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+
+  color: #D54444;
+}
+
+.intro {
+  width: 90vw;
+  padding: 1rem;
+  margin-top: 1rem;
+}
