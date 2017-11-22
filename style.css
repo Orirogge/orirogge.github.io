@@ -1,0 +1,355 @@
+                    /********* ALGEMEEN *********/
+
+* {
+    box-sizing: border-box;
+    font-family: "Avenir";
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.backbutton {
+  background-color: white;
+  color: black;
+  border: 0px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Grote titel */  
+h1 {
+    font-size: 2.7em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+
+/* Titel in foto */  
+h2 {
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* Accentkleur */  
+.oranje {
+    color: #E5BB6B;
+}
+
+/* Teksten */  
+p {
+  margin: 0px;
+  color: #95989A;
+  line-height: 1.8em;
+  font-size: 14px;
+}
+
+                    /********* NAVIGATIE *********/  
+
+/* Navigatielist */  
+li {
+  display: inline;
+  float: right;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+/* Navigatielist */  
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  width: 880px;
+}
+
+/* Navigatielist links */  
+li a {
+  display: block;
+  color: #B2B2B2;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+li a:hover {
+  color: black;
+}
+
+/* Kotup. logo */  
+#nav_logo {
+  float: left;
+  font-size: 2.2em;
+  margin-top: 30px;
+  margin-left: -20px;
+  font-weight: bold;
+}
+
+#nav_logo a {
+  color: black;
+}
+
+#nav_logo a:hover {
+  color: #E5BB6B;
+}
+
+#nav_active {
+  color: black;;
+}
+
+/* Hamburgermenu */  
+.menu {  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.9);
+  transition: 0.2s;
+  overflow-x: hidden;
+}
+
+/* Hamburgermenu tekst */  
+.menu-content {
+  position: relative;
+  text-align: left;
+  margin-top: 250px;
+  left: 10%;
+}
+
+/* Hamburgermenu tekst */ 
+.menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  font-weight: 500;
+}
+
+/* Hamburgermenu tekst */ 
+.menu a:hover {
+  color: #E5BB6B;
+}
+
+/* Hamburgermenu sluiten */ 
+.menu .sluit {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+                    /********* GRID *********/  
+  
+.g__wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+  
+.g__container {
+    display: block;
+    margin: 0 auto;
+    max-width: 960px;
+}
+  
+.g__row {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.g__column {
+    position: relative;
+    float: left;
+    padding: 50px;
+    color: black;
+    width: 100%
+}
+  
+.g__column-1 { 
+  width: 50%; }
+  
+.g__column-2 { 
+  width: 100; }
+
+                    /********* FOTO'S *********/ 
+  
+.image {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    object-fit: cover;
+}
+
+.imagevierkant {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.imagetext {
+    position: absolute; 
+    top: 330px; 
+    left: 80px; 
+    width: 100%;
+    color: white;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+                    /********* CONTACT *********/
+  
+input[type=text], select, textarea {
+    width: 100%;
+    font-size: 14px;
+    color: #95989A;
+    line-height: 1.8em;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea {
+  width: 100%;
+}
+                  
+input[type=submit] {
+    background-color: #E5BB6B;
+    color: white;
+    font-weight: bolder;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 50%;
+}
+                  
+input[type=submit]:hover {
+    background-color: black;
+}
+              
+
+                    /********* FOOTER *********/
+
+/* Footerlijn */ 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #95989A;
+  padding: 0;
+  width: 60%;
+  margin-top: 50px;
+}
+
+.footertext {
+  color:#95989A;
+}
+
+.footertext2 {
+  color:#95989A;
+  text-align: right;
+}
+
+.fa {
+  margin-top: 50px;
+  width: 50px;
+  text-decoration: none;
+  font-size: 30px !important;
+  color: black;
+}
+
+.fa:hover {
+  color: #E5BB6B;
+}
+
+.footericons a {
+  font-size: 16px !important;
+  margin-top: 0px;
+}
+
+#privacy {
+  text-align: center;
+  font-size: 12px;
+}
+
+                    /********* MEDIA QUERIES *********/
+
+@media screen and (max-width: 900px) {
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 0px;
+      }
+
+      ul {
+        width: 100%;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+      
+      hr {
+        width: 80%;
+      }
+
+      .footertext {
+        text-align: center;
+      }
+      
+      .footertext2 {
+        text-align: center;
+      }
+
+      .footericons {
+        display: none;
+      }
+
+}
+
+@media screen and (max-width: 700px) {
+  
+.g__wrapper {
+  width: 100%;
+}
+
+.g__container {
+  width: 100%;
+}
+
+.g__row {
+  width: 100%;
+}
+
+.g__column {
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.imagetext {
+  position: absolute; 
+  top: 290px; 
+  left: 40px; 
+  width: 100%;
+  color: white;
+}
+
+}
